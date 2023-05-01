@@ -1,0 +1,7 @@
+#! /usr/bin/bash
+
+ECR_FLASK_URL="$AWS_ACCOUNT_ID.dkr.ecr.$AWS_DEFAULT_REGION.amazonaws.com/system-monitoring-app-repo"
+echo $ECR_FLASK_URL
+
+docker tag system-monitoring-app-repo:latest $ECR_FLASK_URL:latest
+docker push $ECR_FLASK_URL:latest
