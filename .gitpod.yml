@@ -1,5 +1,5 @@
-image:
-  name: gitpod/workspace-full:latest
+#image:
+#  name: gitpod/workspace-full:latest
 
 tasks:
   - init: pip install -r requirements.txt
