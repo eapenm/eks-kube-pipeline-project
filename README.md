@@ -127,7 +127,7 @@ Push the Docker image to ECR using the push commands on the console:
 
 ## **Part 4: Creating an EKS cluster and deploying the app using Python**
 
-### **Step 1: Create an EKS cluster**
+### **Step 1: Create an EKS cluster** I used terraform scripts to create EKS cluster and node
 
 Create an EKS cluster and add node group
 
@@ -209,3 +209,8 @@ kubectl get pods -n default (to check the pods)
 Once your pod is up and running, run the port-forward to expose the service
 
 kubectl port-forward service/<service_name> 5000:5000
+kubectl port-forward svc/system-monitoring-app-service 5000:5000
+
+Final Application:
+![image](https://user-images.githubusercontent.com/13297994/235665571-cc7c134d-1bd3-4770-bae4-ad40aa258083.png)
+
