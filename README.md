@@ -13,7 +13,8 @@
     4. Docker Commands
 4. Create ECR repository using Python Boto3 and pushing Docker Image to ECR
 5. Learn Kubernetes and Create EKS cluster and Nodegroups
-6. Create Kubernetes Deployments and Services using Python!
+6. Used terraform scripts to create the infrastucture to create the EKS cluster and the node group.
+7. Create Kubernetes Deployments and Services using Python!
 ```
 ## **Prerequisites** !
 
@@ -126,8 +127,10 @@ Push the Docker image to ECR using the push commands on the console:
 ```
 
 ## **Part 4: Creating an EKS cluster and deploying the app using Python**
-
-### **Step 1: Create an EKS cluster** I used terraform scripts to create EKS cluster and node
+    
+# Used terraform scripts to create EKS cluster and node
+    
+### **Step 1: Create an EKS cluster** 
 
 Create an EKS cluster and add node group
 
@@ -201,6 +204,8 @@ make sure to edit the name of the image on line 25 with your image Uri.
 - Check by running following commands:
 
 ```jsx
+Command to connect to EKS Cluster:
+    aws eks update-kubeconfig --name ekscluster
 kubectl get deployment -n default (check deployments)
 kubectl get service -n default (check service)
 kubectl get pods -n default (to check the pods)
