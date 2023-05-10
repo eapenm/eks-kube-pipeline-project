@@ -200,7 +200,7 @@ api_instance.create_namespaced_service(
 
 make sure to edit the name of the image on line 25 with your image Uri.
 
-- Once you run this file by running “python3 eks.py” deployment and service will be created.
+- Once you run this file by running “python3 eks_deploy_svc.py” deployment and service will be created.
 - Check by running following commands:
 
 ```jsx
